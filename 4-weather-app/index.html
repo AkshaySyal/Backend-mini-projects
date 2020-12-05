@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Weather App</title>
+    <style>
+        body {
+            background: white
+        }
+
+        section {
+            background: #006295;
+            color: white;
+            border-radius: 1em;
+            padding: 2em;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        .button {
+            position: absolute;
+            left: 22%;
+            top: 80%;
+        }
+
+        input {
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Weather App</h1>
+        <form action="/" method="post">
+            <input type="text" name="city" placeholder="Enter City"></br>
+            <button class="button" type="submit">Get Weather Details</button>
+        </form>
+    </section>
+</body>

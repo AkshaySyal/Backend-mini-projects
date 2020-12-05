@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+            background: white
+        }
+
+        section {
+            background: black;
+            color: white;
+            border-radius: 1em;
+            padding: 2em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        .button1 {
+            position: absolute;
+            left: 20%;
+            top: 80%;
+
+        }
+
+        .button2 {
+            position: absolute;
+            left: 35%;
+            top: 80%;
+        }
+
+        .button3 {
+            position: absolute;
+            left: 50%;
+            top: 80%;
+
+        }
+
+        .button4 {
+            position: absolute;
+            left: 65%;
+            top: 80%;
+        }
+
+        input {
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Calculator</h1>
+        <form action="/" method="post">
+            <input type="text" name="num1" placeholder="Number 1"></br>
+            <input type="text" name="num2" placeholder="Number 2"></br>
+            <button class="button1" formaction="/add" type="submit">+</button>
+            <button class="button2" formaction="/sub" type="submit">-</button>
+            <button class="button3" formaction="/mul" type="submit">*</button>
+            <button class="button4" formaction="/div" type="submit">/</button>
+        </form>
+    </section>
+</body>
