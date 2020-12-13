@@ -1,0 +1,41 @@
+<%-include('header') %>
+    <% if (success!="" ){%>
+        <div class="alert">
+            <strong>
+                <%=success%>
+            </strong>
+        </div>
+        <%}%>
+            <div class="box" id="heading">
+                <h1>
+                    <%=Title%>
+                </h1>
+            </div>
+
+            <div class="box">
+
+                <% coursesMap.forEach((value,key)=>{%>
+
+                    <form method="post">
+                        <div class="item">
+                            <input type="checkbox" onChange="this.form.submit()" <% if (value[1]) { %>checked <% } %> >
+
+                                <p>
+                                    <%=key%> &nbsp;
+                                        <%=value[0]%>
+
+                                </p>
+                        </div>
+                        <input type="hidden" name="credits" value="<%=value[0]%>"></input>
+                        <input type="hidden" name="status" value="<%=value[1]%>"></input>
+                        <input type="hidden" name="courseName" value="<%=key%>"></input>
+                    </form>
+
+                    <%});%>
+
+
+            </div>
+
+
+
+            <%- include('footer')%>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/formstyle.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>LOGIN</h1>
+        <form id="registration_form" method="post" action="/login">
+            <div>
+                <input type="text" id="form_uname" name="username" required="">
+                <span class="error_form" id="uname_error_message"></span>
+                <label>
+                    User Name
+                </label>
+            </div>
+
+            <div>
+                <input type="password" id="form_password" name="password" required="">
+                <span class="error_form" id="password_error_message"></span>
+                <label>Password</label>
+            </div>
+
+
+            <input type="submit" value="Login" name="">
+        </form>
+        Didn't Register? <a href="/register">Register Here</a>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
